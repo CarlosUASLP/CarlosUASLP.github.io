@@ -1,24 +1,32 @@
 h1{
     color : black;
     font-family : "Century Gothic";
+    font-size: 40px;
 }
 
 p{
+    /*PROPIEDADES DEL TEXTO*/
     color : black;
     font-size : 20px;
     text-align : left;
     font-family : "Century Gothic";
-
+    /*PROPIEDADES DEL BORDE*/
     border-color: black;
     border-width: 5px;
     border-style : solid;
-
     width:600px;
     height:150px;
-
+    /*DISTANCIA DEL TEXTO AL BORDE*/
     padding: 10px 10px 10px 10px;
 }
 
 a{
     color : dodgerblue;
+}
+
+h6{
+    color : white;
+    font-family: "Candara";
+    font-size: 15px;
+    text-align: right;
 }
