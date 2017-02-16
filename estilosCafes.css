@@ -1,0 +1,54 @@
+h2{
+    color : darkorange;
+    font-family: "Century Gothic";
+    font-size: 30px;
+}
+
+li, td{
+    color : white;
+    font-size : 20px;
+    text-align : left;
+    font-family : "Century Gothic";
+}
+
+table{
+    border-collapse: collapse;
+}
+table, th, td{
+    border: 3px solid black;
+}
+
+.titulo{
+    color:darkorange;
+    font-size: 30px;
+    font-family: "Candara";
+}
+
+th{
+    color: dodgerblue;
+    font-size: 25px;
+    font-family: "Candara";
+}
+
+.parrafos{
+    color : white;
+    font-size : 27px;
+    font-family : "Candara";
+}
+
+.paraH3{
+    color : white;
+    font-family: "Century Gothic";
+    font-size: 30px;
+}
+
+.enlace{
+    color : dodgerblue;
+    font-size: 25px;
+    font-family: "Candara";
+}
+dl{
+    color: white;
+    font-size : 20px;
+    font-family: "Candara";
+}
