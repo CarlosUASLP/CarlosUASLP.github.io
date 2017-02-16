@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Enlaces en HTML </title>
+        <link href = "estilosCafes.css" type = "text/css" rel = "stylesheet">
+    </head>
+    <body background = "fondo4.jpg">
+        <h2> ¿Que es un enlace? </h2>
+            <p class = "parrafos"> Los enlaces en HTML nos permiten de una manera muy cómoda redirigir al usuario a otra parte, cuando éste de click en dicho enlace. Podemos hacer que el usuario se vaya a otra url distinta a la que está, o podemos hacer que vaya a otra parte pero dentro del mismo archivo en el que está, dentro de la misma url. </p>
+        <h2> Sintaxis del enlace </h2>
+        <p class = "parrafos"> Para colocar un enlace, nos serviremos de las etiquetas &lt;a&gt; y su cierre. Dentro de la etiqueta de apertura deberemos especificar asimismo el destino del enlace. Este destino será introducido bajo forma de atributo, el cual lleva por nombre "href". <br><i>La sintaxis general de un enlace es por tanto de la forma:</i> </p>
+        <h3 class = "paraH3"> <center> &lt;a href = "destino" > contenido &lt;/a&gt;</center> </h3>
+        <h2> Enlace relativo </h2>
+        <p class = "parrafos"> Las URL relativas prescinden de algunas partes de las URL para hacerlas más breves. Como se trata de URL incompletas, es necesario disponer de información adicional para obtener el recurso enlazado. En concreto, para que una URL relativa sea útil es imprescindible conocer la URL del origen del enlace. </p>
+        <h2> Enlace absoluto </h2>
+        <p class = "parrafos"> Las URL absolutas incluyen todas las partes de la URL <i>(protocolo, servidor y ruta)</i> por lo que no se necesita más información para obtener el recurso enlazado. </p>
+        <a class = "enlace" target = "_blank" href = "http://librosweb.es/libro/xhtml/capitulo_4/enlaces_relativos_y_absolutos.html" > <center>Ejemplo de enlace <strong>absoluto</strong> </center> </a>
+        c
+        <h3 class = "paraH3"> <center> &lt;img src = "MiImagen.jpg" alt = "Texto alternativo" width = 20px height = 20px&gt;</center> </h3>
+        <h2> Listas en HTML y su sintaxis</h2>
+        <p class = "parrafos"> Las listas no ordenadas van dentro de la etiqueta &lt;ul&gt;  y de su cierre &lt;/ul&gt;. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta &lt;li&gt; y su cierre.<br> Ejemplo de <i>lista no ordenada</i></p>
+            <ul>
+                <li> Elemento número 1 </li>
+                <li> Elemento número 2 </li>
+                <li> Elemento número 3 </li>
+            </ul>
+        <p class = "parrafos"> Las listas ordenadas van enmarcadas dentro de las etiquetas &lt;ol&gt; &lt;/ol&gt;. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;li&gt;. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos. <br> Ejemplo de <i>lista ordenada</i> </p>
+            <ol>
+                <li> Elemento número 1</li>
+                <li> Elemento número 2</li>
+                <li> Elemento número 3</li>
+            </ol>
+        <p class = "parrafos"> Si lo que vamos a hacer es un listado de definiciones, podemos usar las etiquetas &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;. <br>Vamos a explicarlas por partes:<br><br>
+
+        La etiqueta &lt;dl&gt; viene de los términos ingleses “Definiton list” y nos indica que dentro de ella, entre ella y su cierre, va a ir una definición.<br><br>
+
+        La etiqueta &lt;dt&gt; viene de los términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos mejor, dentro de &lt;dt&gt; iría el título de la definición.<br><br>
+
+        La etiqueta &lt;dd&gt; viene de los términos “Definition description” y nos dice que dentro de ésta irá la definición.<br><br>
+
+        Si escribimos varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación. <br><br> Ejemplos </p>
+        <dl>
+            <dt>Aquí va el término que definiremos</dt>
+                <dd>Y aquí dentro irá la definición propiamente dicha.</dd>
+        </dl>
+        <dl>
+            <dt>Aquí va la segunda definición</dt>
+                <dd>Y aquí dentro irá la segunda definición, separada automáticamente de la anterior.</dd>
+        </dl>
+    </body>
+</html>
