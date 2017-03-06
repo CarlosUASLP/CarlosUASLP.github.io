@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> JavaScript </title>
+</head>
+<body>
+    <h1> JavaScript </h1>
+    <ul>
+        <li> Corre del lado del cliente pero tambien del servidor.  </li>
+        <li> No se compila, sino que se interpreta.  </li>
+        <li> Por decir el navegador es el que la compila durante el momento  </li>
+        <li> JavaScript es interpretado (No va a proporsionar interactividad con nuestra pagina)  </li>
+    </ul>
+
+    <h1> Pequeña introduccion historica </h1>
+    <ul>
+        <li> Brendan Eich, trabajo en la compañia Netscape en el año de 1995, creo su propio navegador comercial. </li>
+        <li> Netscape navigator. </li>
+        <li> Los applets fueron creados por Java. </li>
+        <li> Java creado por la empresa SunMicrosystems en el año de 1993, despues SunMicrosystems fue comprada por Oracle.</li>
+        <li> Netscape -> liveScript <br> SunMicrosystem -> Java </li>
+    </ul>
+    <h1> JavaScript </h1>
+    <p> Nos va a servir para: DOM (Document Object Model)<br>JScript de Microsoft para internet explorer.<br> ECMAScript (Asi se llama el lenguaje estandar.) <br> JavaScript y JScript son implementaciones.</p>
+
+    <h1> Uso y aplicaiones de JS (JavaScript) </h1>
+    <ul>
+        <li> Para hacer animaciones </li>
+        <li> Geolocalizacion </li>
+        <li> Canvas </li>
+        <li> Audio / Video </li>
+        <li> Procesamiento de formularios </li>
+        <li> Ajax (comunicacion entre un cliente y servidor) (asincrona) </li>
+        <li> Elementos HTML dinamicos </li>
+        <li> Juegos en el navegador </li>
+        <li> Efectos y elementos flotantes </li>
+        <li> Programacion del lado del servidor Node.js </li>
+    </ul>
+
+    <h1> Notas de Codecademy en JavaScript </h1>
+    <h2> Tipos de datos </h2>
+    <ul>
+        <li> numbers </li>
+        <li> strings "hola".length para saber cuantos caracteres tiene. </li>
+        <li> booleano (George Boole) </li>
+        <li> Comando console.log() -> registro de consola. </li>
+        <li> Operadores de comparacion <, >, <=, >=, ===, </li>
+        <li> Desiciones (Sentencias if o sentencia condicional) </li>
+        <li> Depuracion: Encontrar los errores y corregirlos. Termino popularizado por Grace Hopper cuando literalmente saco una polilla de su computadora. </li>
+    </ul>
+    <h2> Simbolo del modulo </h2>
+    <p> Cuando se coloca % entre dos numeros, la computadora divide el primer numero entre el segundo y luego dara como resultado el residuo. </p>
+    <h2> String </h2>
+    <p> String completo o solo parte de ella (subcadena) del string original. "alguna palabra".substring(x,y)<br>Donde: <br>x -> es el punto donde se comienza a cortar.<br> y -> es el punto donde termina de cortar el string original.</p>
+    <h2> Declarar variables </h2>
+    <p> var nombreVariable = tipo de datos;<br>Ejemplos: <br>var miEdad = 25;  </p>
+    <h2> Operadores </h2>
+    <dl>
+        <dt> Operadores aritmeticos </dt>
+        <dd> +, -, *, /, % </dd>
+        <dt> Operadores relacionales </dt>
+        <dd> =, <=, >=, ==, !==, === </dd>
+        <dt> Operadores logicos </dt>
+        <dd> &amp;&amp;, ||, ! </dd>
+        <dt> Operadores asignacion </dt>
+        <dd> =, +=, -=, *=, /=, %= </dd>
+    </dl>
+
+    <dl>
+        <dt> Condicionales </dt>
+        <dd> if </dd>
+        <dd> if / else </dd>
+        <dd> switch </dd>
+        <dd> case </dd>
+        <dd> break </dd>
+        <dd> default </dd>
+
+        <dt> Ciclos </dt>
+        <dd> while </dd>
+        <dd> do-while </dd>
+        <dd> for </dd>
+        <dd> break </dd>
+        <dd> continue </dd>
+
+        <dt> Return </dt>
+    </dl>
+
+    <h2> Arreglos con JavaScript </h2>
+    <p>  Los arreglos son heterogeneos porque puede guardar varios tipos de datos. Los arreglos son dinamicos en JavaScript </p>
+    <ul>
+        <li> Creacion </li>
+        <li> Acceso </li>
+        <li> Propiedades </li>
+        <li> Iteracion </li>
+        <li> Caracteristicas particulares </li>
+    </ul>
+    <h3> Creacion </h3>
+    <p> var arreglo = new Array();<br>var arreglo = [];<br>var arreglo = Array('hola', 123, true); <br> var arreglo = ['hola', 123, true]; </p>
+    <h3> Acceso </h3>
+    <p> var x = arreglo[0];<br> arreglo[0] = 'mundo';<br>arreglo[10] = 3456; </p>
+    <h3> Matriz </h3>
+    <p> var m = [[1,2,3],[4,5,6]]<br> var m = Array (Array (1,2,3), Arrary (4,5,6)); </p>
+    <h3> Metodos con los arreeglos </h3>
+    <table>
+        <caption> Metodos </caption>
+        <thead>
+            <tr>
+                <td> Nombre </td>
+                <td> Descripcion </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> a.concat(b); </td>
+                <td> Regresa otro arreglo que contiene los elementos de dos arreeglos. </td>
+            </tr>
+            <tr>
+                <td> a.join() </td>
+                <td> Va a unir todos los elementos de un arreglo en una cadena. </td>
+            </tr>
+            <tr>
+                <td> a.push(5) </td>
+                <td> Agregar un elemento al final del arreglo. </td>
+            </tr>
+            <tr>
+                <td> a.pop() </td>
+                <td> Elimina el ultimo elemento del arreglo. </td>
+            </tr>
+            <tr>
+                <td> reverse() </td>
+                <td> Regresa un arreglo con los elementos invertidos. </td>
+            </tr>
+            <tr>
+                <td> sort() </td>
+                <td> Ordena los elementos de manera ascendente tratandolos como cadenas. </td>
+            </tr>
+        </tbody>
+    </table>
+    <h1> Sintaxis de la funcion </h1>
+    <ol>
+        <li> Declarar la funcion usando var y un nombre para la funcion. </li>
+        <li> Usar comando function para indicar que se trata de una funcion. </li>
+        <li> El fragmento entre parentesis se llama Parametro; al parametro se le va a asignar un valor especifico cuando llamemos a la funcion. </li>
+        <li> Escribe el codigo entre { } </li>
+    </ol>
+    <p> 1) Declaracion <br>function nombreFuncion (parametro){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instrucciones <br>} </p>
+    <p> 2) Expresion <br> var nombreFuncion = function [nombre Opcional] (parametros){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instrucciones<br> }<br> Las funciones anonimas no necesitan nombre. </p>
+    <h1> Comando return </h1>
+    <p> El comando return simplemente le devuelve al programador el valor que resulta de una funcion. </p>
+    <h1> Variables globales vs locals </h1>
+    <p> El ambito puede ser global o local </p>
+    <ul>
+        <li> Las variables definidas fuera de una funcion son accesibles en cualquier parte una vez que han sido declaradas. Son llamadas vaiables globales y su ambito es global </li>
+        <li> Las variables definidas dentro de una funcion son variables locales. No se puede acceder a ellas fuera de la funcion. </li>
+    </ul>
+    <a href = "index.html">  <img  src = "btnHome.ico" alt = "Inicio" width = "50" height= "50"> </a>
+</body>
+</html>

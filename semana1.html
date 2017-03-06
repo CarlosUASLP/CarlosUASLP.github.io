@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> CSS Cascading Style Sheets </title>
+</head>
+<body>
+    <h1> CSS Cascading Style Sheets </h1>
+    <p> Son estilos que ya estan hechos por desarrolladores o por empresas ya establecidas. </p>
+    <h2> Hojas de estilo en cascada </h2>
+    <ul>
+        <li> Combinacion de colores </li>
+        <li> Diseñadores del estilo </li>
+        <li> Programadores del contenido </li>
+    </ul>
+    <table>
+        <caption> Historia de CSS</caption>
+        <thead>
+            <tr>
+                <th> Version </th>
+                <th> Borrador </th>
+                <th> Liberado </th>
+                <th> Soportado </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> CSS1 </td>
+                <td> 1996 </td>
+                <td> 1999 </td>
+                <td> 2001 Soportado por todos los navegadores </td>
+            </tr>
+            <tr>
+                <td> CSS2 </td>
+                <td> 1998 </td>
+                <td> 2007 </td>
+                <td> ? </td>
+            </tr>
+            <tr>
+                <td> CSS3 </td>
+                <td> 2001 </td>
+                <td> 2013 </td>
+                <td> ? </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2> ¿Que son las reglas? </h2>
+    <p> Las reglas sirven para cambiar los elementos de HTML. Las reglas permiten cambiar la apariencia (presentacion) de los elementos HTML. </p>
+    <h2> Sintaxis general de CSS </h2>
+        <p> selector { declaraciones } </p>
+    <h2> Declaraciones CSS </h2>
+        <p> propiedad : valor; </p>
+    <h2> Propiedades </h2>
+        <ul>
+            <li> colores </li>
+            <li> fuentes </li>
+            <li> margenes </li>
+            <li> etc </li>
+        </ul>
+    <h2> Ejemplos </h2>
+        <p> h1 { color : blue; } <br> p { font-size : 20px; } </p>
+    <h2> Tipos de estilos </h2>
+    <ol>
+        <li> Por default (navegador) <br> Es el que ya viene integrado en el navegador </li>
+        <li> Del usuario (archivo local) </li>
+        <li> Hoja de estilo externa <br> Utiliza la etiqueta &lt;link&gt; para hacer referencia al archivo <br> Ejemplo: <br> &lt;head&gt;<br> &lt; link href = "estilos.css" type = "text/css" rel = "stylesheet" &gt; <br>&lt;/head&gt;</li>
+        <li> Estilo interno  <br> Esta adentro del mismo archivo HTML y CSS. Utiliza la etiqueta &lt;style&gt; No es muy recomendable. <br> Ejemplo: <br> &lt;head&gt;<br> &lt;style&gt; <br> h1 { color : blue; } <br> &lt;/style&gt;<br>&lt;/head&gt;</li>
+        <li> Estilo en linea <br> Se asigna la propiedad y valor como atributo del elemento.<br> Ejemplo: <br> &lt; h1 style = " color : blue; "&gt; Titulo &lt;/h1&gt; </li>
+    </ol>
+    <h1> Selectores CSS </h1>
+    <dl>
+        <dt> 1) Selector de tipo </dt>
+        <dd> Selecciona un tipo de elemento HTML y aplica el estilo a todos los elementos del mismo tipo.<br>Ejemplo: <br> p { text-align : justify; } </dd>
+        <dt> 2) Selector descendente </dt>
+        <dd> Aplica el estilo a los elementos que estan contenidos dentro de otros elementos.<br>Ejemplo: <br>p b { color : red; } </dd>
+        <dt> 3) Selector hijo </dt>
+        <dd> Similar al descendente pero mas restrictivo. Aplica el estilo solamente a los elementos que sean hijos directos de otro elemento.<br>Ejemplo: <br> p > b { color : blue; } </dd>
+        <dt> 4) Selector por ID </dt>
+        <dd> Un ID es un atributo de un elemento HTML y se utiliza para aplicar un estilo de manera particular. <br>Ejemplo: <br> &lt;p id = "introduccion"&gt; Este es el parrafo de la introduccion &lt;/p&gt;<br>#intriduccion{ color : blue; } </dd>
+        <dt> 5) Selector por clase </dt>
+        <dd> Aplica estilo a un conjunto de elementos. <br>Ejemplo: <br>&lt;p class = "especial"&gt; Este es un parrafo especial &lt;/p&gt;<br>.especial { color : red; }</dd>
+        <dt> 6) Selector universal </dt>
+        <dd> Aplica el mismo estilo a "todos" los elementos de la pagina. </dd>
+    </dl>
+    <p> Los estilos se heredan, si aplicas un estilo a un elemento, todos los elementos dentro de el tendran el mismo estilo, pero se puede modificar por medio de declaraciones adicianales en cascada. </p>
+
+    <h1>  Agrupaciones de elementos </h1>
+    <h2> &lt;div&gt; <br> &lt;span&gt; </h2>
+    <p> Ejemplo de &lt;span&gt;<br>&lt;p&gt; Esto es el &lt;span&gt; = "nombre"&gt; Area de computacion e informatica &lt;/span&gt; de la UASLP &lt;/p&gt;<br> &lt;div&gt; Agrupa elementos en el bloque<br> &lt;span&gt; Agrupa elementos en linea </p>
+    <h3> Color : nombre; </h3>
+    <p> Existen 140 nombres de colores. <br>Con hexadecimal #A3B8F3 con 6 o 3 digitos.<br>(rgb) y (rgba) rgb(x,y,z);<br>(hsl) y (hsla) grises y blancos.</p>
+    <h3> Fuentes </h3>
+    <table>
+        <caption>  Familias de fuentes </caption>
+        <thead>
+        <tr>  
+            <td> Serif </td>
+            <td> Sans-Serif </td>
+            <td> Monospace </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Detalles en los extremos. </td>
+                <td> No tiene detalles pero es de ancho variable. </td>
+                <td> Ancho fijo todas las letras tienen mucho ancho. </td>
+            </tr>
+            <tr>
+                <td> Times News Roman </td>
+                <td> Arial </td>
+                <td> Courier (codigo) </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3> Fuentes </h3>
+    <dl>
+        <dt> font-family </dt>
+        <dd> p { font-family : "Times News Roman", Georgia, Serif; } </dd>
+        <dt> font-style </dt>
+        <dd> normal, italic, oblique </dd>
+        <dt> font-size </dt>
+        <dd> px, %, em (tamaño de la letra "m") </dd>
+        <dt> font-weight </dt>
+        <dd> normal, bold </dd>
+    </dl>
+    <h3> Texto </h3>
+    <dl>
+        <dt> Efectos <br>text-decoration </dt>
+        <dd> subrayado (underline), sobre rayado (overline), tachado (line-through), parpadeo (blink) </dd>
+        <dt> Alineacion <br>text-align </dt>
+        <dd> izquierdo (left), derecho (right), centrado (center)</dd>
+        <dt> Transformacion <br> text-transform </dt>
+        <dd> mayusculas (uppercase), minusculas (lowercase), titulo (capitalize)</dd>
+    </dl>
+    <a href = "index.html">  <img  src = "btnHome.ico" alt = "Inicio" width = "50" height= "50"> </a>
+</body>
+</html>
