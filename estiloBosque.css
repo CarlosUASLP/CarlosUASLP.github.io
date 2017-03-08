@@ -9,3 +9,7 @@ li{
     font-size: 30px;
     font-weight: bold;
 }
+
+.body1{
+    background-image : url("fondo1.jpg");
+}

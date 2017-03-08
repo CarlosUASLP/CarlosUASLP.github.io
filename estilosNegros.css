@@ -43,3 +43,11 @@ th , td{
     font-size : 20px;
     color : black;
 }
+
+.body1{
+    background-image : url("fondo5.jpg");
+}
+
+.body2{
+    background-image: url("fondo1.jpg");
+}

@@ -50,3 +50,11 @@ p{
   top:  100px; 
   left: 900px;
 }
+
+.body1{
+    background-image: url("fondo2.jpg");
+}
+
+.body2{
+    background-image: url("fondo3.jpg");
+}
