@@ -1,0 +1,33 @@
+h1{
+    font-family: "Candara";
+    font-size: 50px;
+    color: Yellow;
+}
+
+body{
+    background-color: indigo;
+}
+
+h2, h3{
+    font-family: "Candara";
+    font-size: 30px;
+    color: Yellow;
+}
+
+p{
+    font-family: "Candara";
+    font-size: 20px;
+    color: white;
+}
+
+table, thead, caption, tbody, th, td{
+    font-family: "Candara";
+    font-size: 20px;
+    color: white;
+}
+
+ou, ul , li, dl, dt, dd{
+    font-family: "Candara";
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: darkorange;
+}
+
+h1{
+    font-family: "Candara";
+    font-size: 50px;
+    color:darkorchid;
+}
+
+h2, h3{
+    font-family: "Candara";
+    font-size: 30px;
+    color:darkorchid;
+}
+
+p, ol, ul, li, dl, dt, dd{
+    font-family: "Candara";
+    font-size: 20px;
+    color:black;
+}
+
+table{
+    font-family: "Candara";
+    font-size: 20px;
+    color:black;
+}
