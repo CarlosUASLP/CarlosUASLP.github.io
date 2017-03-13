@@ -31,3 +31,42 @@ ou, ul , li, dl, dt, dd{
     font-size: 20px;
     color: white;
 }
+
+#div1{
+    color:  black;
+    font-family: "Candara";
+    font-size: 20px;
+    background-color: red;
+    border: 3px solid black;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 100px;
+    /*top : 200px;*/
+}
+
+#div2{
+    color:  black;
+    font-family: "Candara";
+    font-size: 20px;
+    background-color: yellow;
+    border: 3px solid black;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 260px;
+    /*top : 200px;*/
+}
+
+#div3{
+    color:  black;
+    font-family: "Candara";
+    font-size: 20px;
+    background-color: green;
+    border: 3px solid black;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 420px;
+    /*top : 200px;*/
+}
