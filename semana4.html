@@ -96,17 +96,30 @@
 
     <table>
         <caption> Tipos de manejadores de eventos </caption>
-        <tbody>
+        <thead>
             <tr> 
-                <td> Manejador HTML </td>
-                <td> Manejador DOM tradicional </td>
-                <td> Escuchador DOM nivel 2 </td>
+                <th> Manejador HTML </th>
+                <th> Manejador DOM tradicional </th>
+                <th> Escuchador DOM nivel 2 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Sintaxis: <br> &lt;elemento onevento = "codigo"&gt; Contenido &lt;/elemento&gt; </td>
+                <td> Sintaxis: <br> elemento.onevento = nombreFuncion </td>
+                <td> Sintaxis: <br> elemento.addEventListener('evento', nombreFuncion) </td>
             </tr>
             <tr>
-                <td> &lt;elemento evento = "" </td>
+                <td> Ejemplo: <br> &lt;a onclick = "alert('Hola')"&gt; Saluda &lt;/a&gt; </td>
+                <td> Ejemplo: <br> document.getElementById('enlace').onclick = function(){alert('Hola')} </td>
+                <td> Ejemplo: <br> document.getElementById('enlace').addEventListener('click', Saludar) </td>
             </tr>
         </tbody>
     </table>
+
+    <h1> Como enlazar el archivo JavaScript al documento HTML </h1>
+    <p> Sintaxis......<br> <strong>&lt;script src = 'js/main.js'&gt;  &lt;/scipt&gt;</strong> </p>
+
     <a target="_blank" href= "http://validator.w3.org/check?uri=https://carlosuaslp.github.io/semana4.html"> <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML"> </a>
     <a target="_blank" href="https://jigsaw.w3.org/css-validator/validator?uri=https://carlosuaslp.github.io/semana4.html"> <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"> </a>
 </body>
