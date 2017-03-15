@@ -3,20 +3,23 @@
 <head>
     <meta charset = "UTF-8">
     <title> Semana 4 </title>
-    <link href = "estiloSema1.css" type = "text/css" rel = "stylesheet">
+    <link href = "estilo2.css" type = "text/css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
-<body>
+<body class = "body1">
     <h1> Bucle for </h1>
     <ul>
         <li> Cada bucle for hace uso de una variable de conteo. La primer parte del bucle for le dice a la computadora que comienze de un valor de 1 para counter. </li>
         <li> La segunda parte del bucle es donde podemos controlar el fin del bucle. </li>
         <li> La tercera parte es la frecuencia con la que se van a realizar las iteraciones.</li>
     </ul>
+
     <h2>  Ejemplo </h2>
-        <p> for (var counter = 1; counter &lt; 6; counter++ ) { <br> console.log(counter);<br>} </p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;for (var counter = 1; counter &lt; 6; counter++ ) { <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(counter);<br>&nbsp;&nbsp;&nbsp;&nbsp;} </p>
     
     <h1> Conoce los arreglos..... </h1>
-    <p> Los arreglos son variables que pueden almacenar numeros y/o cadenas. </p>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;Los arreglos son variables que pueden almacenar numeros y/o cadenas. </p>
     <h2>  Arreglos </h2>
     <ul>
         <li> Almacenan listas de datos. </li>
@@ -24,10 +27,10 @@
         <li> Estan ordenados de forma que la posicion de cada dato es fija. </li>
     </ul>
     <h2>  Ejemplo </h2>
-        <p> var nombres = [´Carlos´, ´Mario´, ´Diana´, ´Paola´]; </p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;var nombres = [´Carlos´, ´Mario´, ´Diana´, ´Paola´]; </p>
 
     <h2>  Acceso a los datos del arreglo </h2>
-        <p> La posicion de los elementos en un arreglo es fija. Asi que solamente necesitamos el nombre del arreglo y la posicion de los datos que queremos. </p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;La posicion de los elementos en un arreglo es fija. Asi que solamente necesitamos el nombre del arreglo y la posicion de los datos que queremos. </p>
         <ul>
             <li> La posicion o el indice de cada dato comienza a contarse desde 0, no desde 1. </li>
             <li> Primer elemento arreglo[0]; </li>
@@ -36,28 +39,30 @@
         </ul>
 
     <h1> Bucle while </h1>
-    <p> El bucle while es ideal para cuando quieres usar un bucle, pero no sabes cuantas veces tendras que ejecutarlo. </p>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;El bucle while es ideal para cuando quieres usar un bucle, pero no sabes cuantas veces tendras que ejecutarlo. </p>
     <h2> Sintaxis..... </h2>
-    <p> while (condicion){ <br>//Realizar acciones.<br>} </p>
-    <p> Mientras que la condicion sea verdadera <b>(TRUE)</b> el codigo se ejecuta hasta que la condicion sea <b>FALSE</b>. </p>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;while (condicion){ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Realizar acciones.<br>&nbsp;&nbsp;&nbsp;&nbsp;} </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Mientras que la condicion sea verdadera <b>(TRUE)</b> el codigo se ejecuta hasta que la condicion sea <b>FALSE</b>. </p>
 
     <h2> Bucles infinitos..... </h2>
-    <p> Si le damos una condicion <b>TRUE</b> a un bucle while y no creas una forma de que esa condicion posiblemente se convierta a <b>FALSE</b>, el bucle se quedara ejecutando para siempre.</p>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;Si le damos una condicion <b>TRUE</b> a un bucle while y no creas una forma de que esa condicion posiblemente se convierta a <b>FALSE</b>, el bucle se quedara ejecutando para siempre.</p>
     <h2>  Ejemplo </h2>
-        <p> var bucle = function(cantidad){<br> while(cantidad &lt; 4)<br>{<br>console.log('Estoy dentro del bucle.');<br>cantidad++;<br>}<br>}; <br> bucle(0);</p>
-
-    <h2> Bucles do / while </h2>
-    <p> A veces quieres estar seguro de que tu bucle se ejecuta al menos una vez, sin importar nada. Si este es el caso, lo que buscas es un bucle do / while. </p>
-    <h2> Sintaxis..... </h2>
-    <p> var condicionBucle = false;<br>do{<br>console.log("Voy a dejar de hacer este bucle<br>porque mi condicion es: String(condicionBucle));"<br>while(condicionBucle === true) } </p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;var bucle = function(cantidad){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while(cantidad &lt; 4)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('Estoy dentro del bucle.');<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cantidad++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;};</p>
 
     <h2> Conclusiones entre los bucles for y while </h2>
-    <p> Los bucles for son geniales para realizar la misma tarea una y otra vez, cuando sabes con anticipacion cuantas veces tendras que repetir los bucles. </p>
-    <p> Los bucles while son ideales cunado tienes que hacer un bucle pero no sabes con anticipacion cunatas veces tendras que ejecutarlo. </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Los bucles for son geniales para realizar la misma tarea una y otra vez, cuando sabes con anticipacion cuantas veces tendras que repetir los bucles. </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Los bucles while son ideales cunado tienes que hacer un bucle pero no sabes con anticipacion cunatas veces tendras que ejecutarlo. </p>
+
+    <h1> Bucles do / while </h1>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;A veces quieres estar seguro de que tu bucle se ejecuta al menos una vez, sin importar nada. Si este es el caso, lo que buscas es un bucle do / while. </p>
+    <h2> Sintaxis..... </h2>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;var condicionBucle = false;<br>&nbsp;&nbsp;&nbsp;&nbsp;do{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Voy a dejar de hacer este bucle porque mi condicion es: String(condicionBucle)");<br>&nbsp;&nbsp;&nbsp;&nbsp;}while(condicionBucle === true) </p>
+
+    
 
     <h1> DOM </h1>
-    <h3> Document Object Model</h3>
-    <p> Representa el documento HTML en forma de una estructura de árbol. El documento se puede manipular facilmente a traves del árbol, es decir, agregar, eliminar, modificar elementos, etc. </p>
+    <h2> Document Object Model</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Representa el documento HTML en forma de una estructura de árbol. El documento se puede manipular facilmente a traves del árbol, es decir, agregar, eliminar, modificar elementos, etc. </p>
     <ol>
         <li>  
             <h3> Acceder elementos del documento </h3>

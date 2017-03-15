@@ -1,5 +1,5 @@
 .body1{
-    background-image: url("wallpaper2.jpg");
+    background-image: url("fondo3.jpg");
 }
 
 h1{
@@ -18,7 +18,7 @@ h2{
     text-align: left;
 }
 
-h3{
+h3, ol{
     color : yellow;
     font-family: 'Lobster', cursive;
     font-size: 20px;
@@ -44,5 +44,35 @@ thead{
 
 table, th, td{
     border-collapse: collapse;
-    border: 3px solid dimgray;
+    border: 3px solid dodgerblue;
+}
+
+#div1, #div2, #div3 {
+    color : white;
+    font-size : 20px;
+    text-align : center;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+
+    /*PROPIEDADES DE LA CAJA*/  
+    /*top, right, bottom y left.*/
+    border: 3px solid #CCC;
+    padding: 1em;
+    margin: 1em 2em 1em 2em;
+    width: 90px;
+}
+
+#div1{
+    position: relative;
+    left: 100px;
+}
+
+#div2{
+    position: relative;
+    left: 300px;
+}
+
+#div3{
+    position: relative;
+    left: 500px;
 }
