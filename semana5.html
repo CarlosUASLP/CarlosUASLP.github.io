@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang = "es">
     <head>
-        <title> Semana #5 jQuery </title>
+        <title> jQuery </title>
         <meta charset="UTF-8">
+        <link href = "estilo1.css" type = "text/css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     </head>
-    <body>
+    <body class = "body1">
         <h1> jQuery </h1>
+
         <h2> write less, do more..... </h2>
-        <p> John Resing (Secrets of the JavaScript ninja, 2006.) <br> John Resing escribio la libreria de jQuery en solo 10 dias.</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;John Resing (Secrets of the JavaScript ninja, 2006). <br> &nbsp;&nbsp;&nbsp;&nbsp;John Resing escribio la libreria de jQuery en solo 10 dias.></p>
+
         <h2> ¿Para que nos puede servir la libreria jQuery? </h2>
         <ul>
             <li> La interacción con HTML. </li>
@@ -18,7 +23,8 @@
             <li> Interacciones AJAX. </li>
             <li> Garantiza la compatibilidad entre navegadores. </li>
         </ul>
-        <p> Todo se realiza a traves de una función llamada: <b> jQuery() </b> recibe como parametro una expresión CSS y regresa un objeto <b> jQuery </b>. <br>Sintaxix.....<br> var objeto = jQuery(selector CSS)</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;Todo se realiza a traves de una función llamada: <b> jQuery() </b> recibe como parametro una expresión CSS y regresa un objeto <b> jQuery </b>. <br>&nbsp;&nbsp;&nbsp;&nbsp;Sintaxis.....<br> &nbsp;&nbsp;&nbsp;&nbsp;var objeto = jQuery(selector CSS)</p>
+
         <h2> Tipos de selectores </h2>
         <ul>
             <li> * Obtenemos todos los elementos. </li>
@@ -27,21 +33,28 @@
         </ul>
 
         <h2> Ejemplo </h2>
-        <p> var todos = jQuery('*') <br> Nos regresa un arreglo con todos los elementos. </p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;var todos = jQuery('*') <br> &nbsp;&nbsp;&nbsp;&nbsp;Nos regresa un arreglo con todos los elementos. </p>
 
         <h2> Filtros basicos </h2>
-        <ul>
-            <!--&nbsp;&nbsp; ESPACIOS
-                <blockquote> SANGRIA </blockquote>-->
-            <li> :first <br> <blockquote> var primero = jQuery('*:fisrt') </blockquote></li>
-            <li> :last <br> <blockquote> var ultimo = jQuery('*:last')</blockquote></li>
-            <li> :even <br> <blockquote> posicion par </blockquote></li>
-            <li> :odd  <br> <blockquote> posicion impar </blockquote></li>
-            <li> :eq(index) <br> <blockquote> posicion igual que index. <br> var segundo = jQuery('* : eq(1)') </blockquote></li>
-            <li> :gt(index) <br> <blockquote> mas alla de la posicion. </blockquote></li>
-            <li> :lt(index) <br> <blockquote> antes de una posicion. </blockquote></li>
-            <li> :not(selector) <br> <blockquote> var sinParrafo = jQuery('* : not(p)') </blockquote></li>
-        </ul>
+
+        <dl>
+            <dt> :first </dt>
+                <dd> var primero = jQuery('*:fisrt') </dd>
+            <dt> :last </dt>
+                <dd> var ultimo = jQuery('*:last') </dd>
+            <dt> :even </dt>
+                <dd> posicion par </dd>
+            <dt> :odd </dt>
+                <dd> posicion impar </dd>
+            <dt> :eq(index) </dt>
+                <dd> posicion igual que index. <br> var segundo = jQuery('* : eq(1)') </dd>
+            <dt> :gt(index) </dt>
+                <dd> mas alla de la posicion. </dd>
+            <dt> :lt(index) </dt>
+                <dd> antes de una posicion. </dd>
+            <dt> :not(selector) </dt>
+                <dd> var sinParrafo = jQuery('* : not(p)') </dd>
+        </dl>
 
         <h2> Metodos de jQuery </h2>
         <h3> Contenido </h3>
@@ -57,7 +70,7 @@
             <li> .prepend() </li>
             <li> .append() </li>
         </ul>
-        <p> Ejemplo: <br> <i><strong>.before()</strong></i> &lt;etiqueta&gt; <i><strong>.prepend()</strong></i> contenido <i><strong>.append()</strong></i> &lt;/etiqueta&gt; <i><strong>.after()</strong></i> </p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;Ejemplo: <br>&nbsp;&nbsp;&nbsp;&nbsp; <i><strong>.before()</strong></i> &lt;etiqueta&gt; <i><strong>.prepend()</strong></i> contenido <i><strong>.append()</strong></i> &lt;/etiqueta&gt; <i><strong>.after()</strong></i> </p>
 
         <h3> Atributos </h3>
         <ul>
@@ -74,10 +87,10 @@
         </ul>
 
         <h3> Ejemplos </h3>
-        <p> $(document).ready(funcion) <br> $(document).load(funcion) <br> Pero tambien lo podemos hacer abreviado <strong>  $(funcion)</strong> <br> jQuery(selector) -&gt; $(selector) <br> var parrafos = jQuery('p') <br> es lo mismo que escribir <br> var parrafos = $('p')</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;$(document).ready(funcion) <br> &nbsp;&nbsp;&nbsp;&nbsp;$(document).load(funcion) <br> &nbsp;&nbsp;&nbsp;&nbsp;Pero tambien lo podemos hacer abreviado <strong>  $(funcion)</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp;jQuery(selector) -&gt; $(selector) <br> &nbsp;&nbsp;&nbsp;&nbsp;var parrafos = jQuery('p') <br> &nbsp;&nbsp;&nbsp;&nbsp;es lo mismo que escribir <br> &nbsp;&nbsp;&nbsp;&nbsp;var parrafos = $('p')</p>
 
         <h3>  ¿Como crear objeto jQuery? </h3>
-        <p> $nuevo = $('&lt;p&gt; parrafo &lt;/p&gt;') <br> $nuevo2 = $('&lt;p&gt;')</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;$nuevo = $('&lt;p&gt; parrafo &lt;/p&gt;') <br>&nbsp;&nbsp;&nbsp;&nbsp;$nuevo2 = $('&lt;p&gt;')</p>
 
         <h2> JavaScript vs jQuery </h2>
         <table> 

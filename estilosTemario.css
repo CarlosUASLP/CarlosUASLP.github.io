@@ -1,28 +1,33 @@
 h1{
-    color : black;
-    font-family : "Century Gothic";
-    font-size: 40px;
+    color : white;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    letter-spacing: 10px;
     text-align: center;
 }
 
 p{
     /*PROPIEDADES DEL TEXTO*/
-    color : black;
+    color : white;
     font-size : 20px;
     text-align : left;
-    font-family : "Century Gothic";
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+
     /*PROPIEDADES DEL BORDE*/
-    border-color: black;
-    border-width: 5px;
+    border-color: dimgray;
+    border-width: 7px;
     border-style : solid;
     width:600px;
     height:150px;
+
     /*DISTANCIA DEL TEXTO AL BORDE*/
-    padding: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
 }
 
 a{
     color : dodgerblue;
+    font-size: 25px;
 }
 
 h6{
@@ -33,5 +38,7 @@ h6{
 }
 
 .body1{
-    background-image: url("fondo1.jpg");
+    /*background-image: url("fondo1.jpg");*/
+    background-image: url("wallpaper2.jpg");
+    /*background-repeat: no-repeat;*/
 }
