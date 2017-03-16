@@ -26,7 +26,7 @@ h3{
     text-align: left;
 }
 
-p, ul , dl, table{
+p, ul , dl, table, ol{
     color : white;
     font-size : 20px;
     text-align : left;
@@ -46,3 +46,37 @@ table, th, td{
     border-collapse: collapse;
     border: 3px solid dimgray;
 }
+
+#img1{
+    position: absolute;
+    left: 400px;
+    top : 300px;
+}
+
+#img2{
+    position: absolute;
+    left: 900px;
+    top : 300px;
+}
+
+#htmlCenter{
+    color : white;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.ddJustificado{
+    text-align: justify;
+    color : white;
+    font-size : 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+/*#logoHTML{
+    position: absolute;
+    left: 200px;
+    top : 200px;
+}*/

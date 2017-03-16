@@ -3,70 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title> JavaScript </title>
-    <link href = "estiloSema3.css" type = "text/css" rel = "stylesheet">
+    <link href = "estilo1.css" type = "text/css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
-<body>
+<body class = "body1">
     <h1> JavaScript </h1>
     <ul>
-        <li> Corre del lado del cliente pero tambien del servidor.  </li>
+        <li> Corre del lado del cliente pero también del servidor.  </li>
         <li> No se compila, sino que se interpreta.  </li>
         <li> Por decir el navegador es el que la compila durante el momento  </li>
-        <li> JavaScript es interpretado (No va a proporsionar interactividad con nuestra pagina)  </li>
+        <li> JavaScript es interpretado (No va a proporcionar interactividad con nuestra página)  </li>
     </ul>
 
-    <h1> Pequeña introduccion historica </h1>
+    <h1> Pequeña introducción histórica </h1>
     <ul>
-        <li> Brendan Eich, trabajo en la compañia Netscape en el año de 1995, creo su propio navegador comercial. </li>
+        <li> Brendan Eich, trabajo en la compañía Netscape en el año de 1995, creó su propio navegador comercial. </li>
         <li> Netscape navigator. </li>
         <li> Los applets fueron creados por Java. </li>
-        <li> Java creado por la empresa SunMicrosystems en el año de 1993, despues SunMicrosystems fue comprada por Oracle.</li>
+        <li> Java creado por la empresa SunMicrosystems en el año de 1993, después SunMicrosystems fue comprada por Oracle.</li>
         <li> Netscape -&gt; liveScript <br> SunMicrosystem -&gt; Java </li>
     </ul>
 
     <h1> JavaScript </h1>
-    <p> Nos va a servir para: DOM (Document Object Model)<br>JScript de Microsoft para internet explorer.<br> ECMAScript (Asi se llama el lenguaje estandar.) <br> JavaScript y JScript son implementaciones.</p>
+    <ul>
+        <li> Nos va a servir para: DOM (Document Object Model). </li>
+        <li> JScript de Microsoft para internet explorer. </li>
+        <li> ECMAScript (Así se llama el lenguaje estándar). </li>
+        <li> JavaScript y JScript son implementaciones. </li>
+    </ul>
 
-    <h1> Uso y aplicaiones de JS (JavaScript) </h1>
+    <h1> Uso y aplicaciones de JS (JavaScript) </h1>
     <ul>
         <li> Para hacer animaciones </li>
-        <li> Geolocalizacion </li>
+        <li> Geolocalización </li>
         <li> Canvas </li>
         <li> Audio / Video </li>
         <li> Procesamiento de formularios </li>
-        <li> Ajax (comunicacion entre un cliente y servidor) (asincrona) </li>
-        <li> Elementos HTML dinamicos </li>
+        <li> Ajax (comunicación entre un cliente y servidor) (asíncrona) </li>
+        <li> Elementos HTML dinámicos </li>
         <li> Juegos en el navegador </li>
         <li> Efectos y elementos flotantes </li>
-        <li> Programacion del lado del servidor Node.js </li>
+        <li> Programación del lado del servidor Node.js </li>
     </ul>
 
     <h1> Notas de Codecademy en JavaScript </h1>
     <h2> Tipos de datos </h2>
     <ul>
         <li> numbers </li>
-        <li> strings "hola".length para saber cuantos caracteres tiene. </li>
+        <li> strings "hola".length para saber cuántos caracteres tiene. </li>
         <li> booleano (George Boole) </li>
         <li> Comando console.log() -&gt; registro de consola. </li>
-        <li> Operadores de comparacion &lt;, &gt;, &lt;=, &gt;=, ===, </li>
-        <li> Desiciones (Sentencias if o sentencia condicional) </li>
-        <li> Depuracion: Encontrar los errores y corregirlos. Termino popularizado por Grace Hopper cuando literalmente saco una polilla de su computadora. </li>
+        <li> Operadores de comparación &lt;, &gt;, &lt;=, &gt;=, ===, </li>
+        <li> Decisiones (Sentencias if o sentencia condicional) </li>
+        <li> Depuración: Encontrar los errores y corregirlos. Termino popularizado por Grace Hopper cuando literalmente saco una polilla de su computadora. </li>
     </ul>
 
-    <h2> Simbolo del modulo </h2>
-    <p> Cuando se coloca % entre dos numeros, la computadora divide el primer numero entre el segundo y luego dara como resultado el residuo. </p>
+    <h2> Símbolo del modulo </h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Cuando se coloca % entre dos números, la computadora divide el primer número entre el segundo y luego dará como resultado el residuo. </p>
+
     <h2> String </h2>
-    <p> String completo o solo parte de ella (subcadena) del string original. "alguna palabra".substring(x,y)<br>Donde: <br>x -&gt; es el punto donde se comienza a cortar.<br> y -&gt; es el punto donde termina de cortar el string original.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;String completo o solo parte de ella (subcadena) del string original. "alguna palabra".substring(x,y)<br>&nbsp;&nbsp;&nbsp;&nbsp;Donde: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x -&gt; es el punto donde se comienza a cortar.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y -&gt; es el punto donde termina de cortar el string original.</p>
+
     <h2> Declarar variables </h2>
-    <p> var nombreVariable = tipo de datos;<br>Ejemplos: <br>var miEdad = 25;  </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;var nombreVariable = tipo de datos;<br>&nbsp;&nbsp;&nbsp;&nbsp;Ejemplos: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var miEdad = 25;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var miNombre = 'Juan Carlos Rangel Ramírez';  </p>
     <h2> Operadores </h2>
     <dl>
-        <dt> Operadores aritmeticos </dt>
+        <dt> Operadores aritméticos </dt>
         <dd> +, -, *, /, % </dd>
         <dt> Operadores relacionales </dt>
         <dd> =, &lt;=, &gt;=, ==, !==, === </dd>
-        <dt> Operadores logicos </dt>
+        <dt> Operadores lógicos </dt>
         <dd> &amp;&amp;, ||, ! </dd>
-        <dt> Operadores asignacion </dt>
+        <dt> Operadores asignación </dt>
         <dd> =, +=, -=, *=, /=, %= </dd>
     </dl>
 
@@ -91,33 +100,37 @@
     </dl>
 
     <h2> Arreglos con JavaScript </h2>
-    <p>  Los arreglos son heterogeneos porque puede guardar varios tipos de datos. Los arreglos son dinamicos en JavaScript </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Los arreglos son heterogéneos porque puede guardar varios tipos de datos. Los arreglos son dinámicos en JavaScript. </p>
     <ul>
-        <li> Creacion </li>
+        <li> Creación </li>
         <li> Acceso </li>
         <li> Propiedades </li>
-        <li> Iteracion </li>
-        <li> Caracteristicas particulares </li>
+        <li> Iteración </li>
+        <li> Características particulares </li>
     </ul>
-    <h3> Creacion </h3>
-    <p> var arreglo = new Array();<br>var arreglo = [];<br>var arreglo = Array('hola', 123, true); <br> var arreglo = ['hola', 123, true]; </p>
-    <h3> Acceso </h3>
-    <p> var x = arreglo[0];<br> arreglo[0] = 'mundo';<br>arreglo[10] = 3456; </p>
-    <h3> Matriz </h3>
-    <p> var m = [[1,2,3],[4,5,6]]<br> var m = Array (Array (1,2,3), Arrary (4,5,6)); </p>
-    <h3> Metodos con los arreeglos </h3>
+
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Creación </h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var arreglo = new Array();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var arreglo = [];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var arreglo = Array('hola', 123, true); <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var arreglo = ['hola', 123, true]; </p>
+
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Acceso </h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var x = arreglo[0];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arreglo[0] = 'mundo';<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arreglo[10] = 3456; </p>
+
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Matriz </h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var m = [[1,2,3],[4,5,6]]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var m = Array (Array (1,2,3), Arrary (4,5,6)); </p>
+
+    <h2>Métodos con los arreglos </h2>
     <table>
-        <caption> Metodos </caption>
+        <caption> Métodos </caption>
         <thead>
             <tr>
                 <th> Nombre </th>
-                <th> Descripcion </th>
+                <th> Descripción </th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td> a.concat(b); </td>
-                <td> Regresa otro arreglo que contiene los elementos de dos arreeglos. </td>
+                <td> Regresa otro arreglo que contiene los elementos de dos arreglos. </td>
             </tr>
             <tr>
                 <td> a.join() </td>
@@ -129,7 +142,7 @@
             </tr>
             <tr>
                 <td> a.pop() </td>
-                <td> Elimina el ultimo elemento del arreglo. </td>
+                <td> Elimina el último elemento del arreglo. </td>
             </tr>
             <tr>
                 <td> reverse() </td>
@@ -137,26 +150,30 @@
             </tr>
             <tr>
                 <td> sort() </td>
-                <td> Ordena los elementos de manera ascendente tratandolos como cadenas. </td>
+                <td> Ordena los elementos de manera ascendente tratándolos como cadenas. </td>
             </tr>
         </tbody>
     </table>
-    <h1> Sintaxis de la funcion </h1>
+
+    <h1> Sintaxis de la función </h1>
     <ol>
-        <li> Declarar la funcion usando var y un nombre para la funcion. </li>
-        <li> Usar comando function para indicar que se trata de una funcion. </li>
-        <li> El fragmento entre parentesis se llama Parametro; al parametro se le va a asignar un valor especifico cuando llamemos a la funcion. </li>
-        <li> Escribe el codigo entre { } </li>
+        <li> Declarar la función usando var y un nombre para la función. </li>
+        <li> Usar comando function para indicar que se trata de una función. </li>
+        <li> El fragmento entre paréntesis se llama Parámetro; al parámetro se le va a asignar un valor especifico cuando llamemos a la función. </li>
+        <li> Escribe el código entre { } </li>
     </ol>
-    <p> 1) Declaracion <br>function nombreFuncion (parametro){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instrucciones <br>} </p>
-    <p> 2) Expresion <br> var nombreFuncion = function [nombre Opcional] (parametros){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instrucciones<br> }<br> Las funciones anonimas no necesitan nombre. </p>
+
+    <h2> Ejemplos..... </h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;1) Declaración <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function nombreFuncion (parametro){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instrucciones <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;2) Expresión <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var nombreFuncion = function [nombre Opcional] (parametros){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instrucciones<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Las funciones anónimas no necesitan nombre. </p>
+
     <h1> Comando return </h1>
-    <p> El comando return simplemente le devuelve al programador el valor que resulta de una funcion. </p>
-    <h1> Variables globales vs locals </h1>
-    <p> El ambito puede ser global o local </p>
+    <p> El comando return simplemente le devuelve al programador el valor que resulta de una función. </p>
+    <h1> Variables globales vs locales </h1>
+    <p> El ámbito puede ser global o local </p>
     <ul>
-        <li> Las variables definidas fuera de una funcion son accesibles en cualquier parte una vez que han sido declaradas. Son llamadas vaiables globales y su ambito es global </li>
-        <li> Las variables definidas dentro de una funcion son variables locales. No se puede acceder a ellas fuera de la funcion. </li>
+        <li> Las variables definidas fuera de una función son accesibles en cualquier parte una vez que han sido declaradas. Son llamadas variables globales y su ámbito es global </li>
+        <li> Las variables definidas dentro de una función son variables locales. No se puede acceder a ellas fuera de la función. </li>
     </ul>
     <a href = "index.html">  <img  src = "btnHome.ico" alt = "Inicio" width = "50" height= "50"> </a>
     <a target="_blank" href= "http://validator.w3.org/check?uri=https://carlosuaslp.github.io/semana3.html"> <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML"> </a>

@@ -11,9 +11,9 @@
         <h1> jQuery </h1>
 
         <h2> write less, do more..... </h2>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;John Resing (Secrets of the JavaScript ninja, 2006). <br> &nbsp;&nbsp;&nbsp;&nbsp;John Resing escribio la libreria de jQuery en solo 10 dias.></p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;John Resing (Secrets of the JavaScript ninja, 2006). <br> &nbsp;&nbsp;&nbsp;&nbsp;John Resing escribió la librería de jQuery en solo 10 días.></p>
 
-        <h2> ¿Para que nos puede servir la libreria jQuery? </h2>
+        <h2> ¿Para qué nos puede servir la librería jQuery? </h2>
         <ul>
             <li> La interacción con HTML. </li>
             <li> La manipulación DOM. </li>
@@ -23,7 +23,7 @@
             <li> Interacciones AJAX. </li>
             <li> Garantiza la compatibilidad entre navegadores. </li>
         </ul>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;Todo se realiza a traves de una función llamada: <b> jQuery() </b> recibe como parametro una expresión CSS y regresa un objeto <b> jQuery </b>. <br>&nbsp;&nbsp;&nbsp;&nbsp;Sintaxis.....<br> &nbsp;&nbsp;&nbsp;&nbsp;var objeto = jQuery(selector CSS)</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;Todo se realiza a través de una función llamada: <b> jQuery() </b> recibe como parámetro una expresión CSS y regresa un objeto <b> jQuery </b>. <br>&nbsp;&nbsp;&nbsp;&nbsp;Sintaxis.....<br> &nbsp;&nbsp;&nbsp;&nbsp;var objeto = jQuery(selector CSS)</p>
 
         <h2> Tipos de selectores </h2>
         <ul>
@@ -35,7 +35,7 @@
         <h2> Ejemplo </h2>
         <p> &nbsp;&nbsp;&nbsp;&nbsp;var todos = jQuery('*') <br> &nbsp;&nbsp;&nbsp;&nbsp;Nos regresa un arreglo con todos los elementos. </p>
 
-        <h2> Filtros basicos </h2>
+        <h2> Filtros básicos </h2>
 
         <dl>
             <dt> :first </dt>
@@ -43,20 +43,20 @@
             <dt> :last </dt>
                 <dd> var ultimo = jQuery('*:last') </dd>
             <dt> :even </dt>
-                <dd> posicion par </dd>
+                <dd> posición par </dd>
             <dt> :odd </dt>
-                <dd> posicion impar </dd>
+                <dd> posición impar </dd>
             <dt> :eq(index) </dt>
-                <dd> posicion igual que index. <br> var segundo = jQuery('* : eq(1)') </dd>
+                <dd> posición igual que index. <br> var segundo = jQuery('* : eq(1)') </dd>
             <dt> :gt(index) </dt>
-                <dd> mas alla de la posicion. </dd>
+                <dd> más alla de la posición. </dd>
             <dt> :lt(index) </dt>
-                <dd> antes de una posicion. </dd>
+                <dd> antes de una posición. </dd>
             <dt> :not(selector) </dt>
                 <dd> var sinParrafo = jQuery('* : not(p)') </dd>
         </dl>
 
-        <h2> Metodos de jQuery </h2>
+        <h2> Métodos de jQuery </h2>
         <h3> Contenido </h3>
         <ul>
             <li> .html() </li>
@@ -83,13 +83,13 @@
         <h3> Eventos </h3>
         <ul>
             <li> .ready() <br>&nbsp;&nbsp; Se ejecuta al momento de terminar de crear el DOM. </li>
-            <li> .load() <br>&nbsp;&nbsp; Se ejecuta al momento de termiar de cargar todos los recursos. (imagenes, scripts, archivos de audio, etc.)</li>
+            <li> .load() <br>&nbsp;&nbsp; Se ejecuta al momento de terminar de cargar todos los recursos. (imágenes, scripts, archivos de audio, etc.)</li>
         </ul>
 
         <h3> Ejemplos </h3>
         <p> &nbsp;&nbsp;&nbsp;&nbsp;$(document).ready(funcion) <br> &nbsp;&nbsp;&nbsp;&nbsp;$(document).load(funcion) <br> &nbsp;&nbsp;&nbsp;&nbsp;Pero tambien lo podemos hacer abreviado <strong>  $(funcion)</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp;jQuery(selector) -&gt; $(selector) <br> &nbsp;&nbsp;&nbsp;&nbsp;var parrafos = jQuery('p') <br> &nbsp;&nbsp;&nbsp;&nbsp;es lo mismo que escribir <br> &nbsp;&nbsp;&nbsp;&nbsp;var parrafos = $('p')</p>
 
-        <h3>  ¿Como crear objeto jQuery? </h3>
+        <h3>  ¿Cómo crear objeto jQuery? </h3>
         <p> &nbsp;&nbsp;&nbsp;&nbsp;$nuevo = $('&lt;p&gt; parrafo &lt;/p&gt;') <br>&nbsp;&nbsp;&nbsp;&nbsp;$nuevo2 = $('&lt;p&gt;')</p>
 
         <h2> JavaScript vs jQuery </h2>
@@ -102,19 +102,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td> .onevento = funcion </td>
-                    <td> .onevento(funcion) </td>
+                    <td> .onevento = función </td>
+                    <td> .onevento(función) </td>
                 </tr>
                 <tr>
                     <td> propiedad del DOM </td>
-                    <td> metodo de jQuery </td>
+                    <td> método de jQuery </td>
                 </tr>
                 <tr>
-                    <td> addEventListener('evento', funcion) </td>
-                    <td> .on('evento', funcion) </td>
+                    <td> addEventListener('evento', función) </td>
+                    <td> .on('evento', función) </td>
                 </tr>
                 <tr>
-                    <td> metodo del DOM </td>
+                    <td> método del DOM </td>
                     <td> asigna a un mismo evento <br> varias funciones </td>
                 </tr>
             </tbody>

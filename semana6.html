@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> jQuery part II </title>
+        <link href="estilo2.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    </head>
+    <body class = "body1">
+        <h1> jQuery part II  </h1>
+        <h2> El Modelo de Objetos de Documento </h2>
+        <p> Para sacarle el máximo partido a jQuery, debemos repasar como se compone una página de HTML.</p>
+
+        <p>Un documento de HTML está estructurado de acuerdo con el Document Object Model, es decir, el Modelo de Objetos de Documento, o DOM. jQuery puede acceder y modificar el HTML interactuando con el DOM.</p>
+        
+        <p>El DOM está compuesto de todos los elementos en la página, dispuestos en una jerarquía que refleja la forma en que el documento de HTML está ordenado. ¿Recuerdas cómo imaginábamos que el documento de HTML era como un árbol? Puedes imaginarte que el DOM es algo parecido. Al igual que en un documento de HTML, los elementos en el DOM pueden tener elementos padres, hijos y hermanos.</p>
+        
+        <p>Tal como div en CSS se refiere al elemento &lt;div&gt; de HTML, el 'div' en jQuery se refiere al mismo elemento &lt;div&gt; en HTML. Imagina que el nombre del elemento se muestra en jQuery igual a como estaba en CSS, solo que ahora aparece en medio de comillas simples. Así que, por ejemplo, puedes enfocarte en cualquier elemento de la clase button usando: </p>
+
+        <p> <strong>$('.button').algunaAcción</strong>
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;Como recordarás, .button es la forma que usas en CSS para enfocarte en cualquier elemento que en tu archivo de HTML tenga class="button".</p>
+
+        <!--<button class ="botones"> Pruebame! </button>-->
+
+        <h1> ¿Qué es jQuery? </h1>
+        <p> jQuery es una biblioteca, o un conjunto de complementos útiles (adds-ons), para el lenguaje de programación JavaScript. Tal vez parezca contradictorio aprender cómo usar una biblioteca antes de aprender el lenguaje en sí, pero existen unas buenas razones para ello. </p>
+        <ul>
+            <li> Toma cierto tiempo llegar a sentirse cómodo con JavaScript, y es más fácil manipular los elementos del DOM directamente con jQuery de lo que es con JavaScript. Vamos a comenzar mostrándote jQuery, para ayudarte a crear sitios web geniales mucho más rápido. </li>
+            <li> jQuery brinda una interfaz sencilla para el código JavaScript subyacente. Es más fácil para la mayoría de usuarios aprender primero a manejar jQuery, y después sí aventurarse en los detalles de JavaScript. </li>
+            <li> jQuery es mucho mejor en cuanto a resultados inmediatos y visuales que el JavaScript normal. </li>
+        </ul>
+
+        <h1> Sintaxis de jQuery </h1>
+        <p>  Si vienes de ver los paréntesis angulares ordenados de HTML, tal vez te parezca que los paréntesis, las llaves y los punto y coma de jQuery son confusos. Afortunadamente el formato de jQuery es predecible, y siempre se verá así: </p>
+        <p> $(document).ready(function() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;$(elementoParaClic).evento(function() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(elementoAfectado).efecto();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+	});</p>
+
+        <h2> Explicación.....</h2>
+        <p>En la primera línea tienes listo el documento, en la segunda línea estableces el elemento de HTML sobre el que quieres que el usuario haga clic, y en la tercera línea haces que suceda el efecto que quieras (tal como hacer que se desvanezca un 'div'). </p>
+        <p> Tal vez esto parezca demasiada información, así que vamos a verla detalladamente. Vamos a comenzar con $().<br> $() es una función (un tipo de acción) que convierte lo que esté en medio de los paréntesis en un objeto de jQuery; es decir, algo con lo que jQuery pueda trabajar. (Más adelante hablaremos sobre las funciones.) </p>
+
+        <h1> Enlazando los archivos de HTML y JavaScript </h1>
+        <p> Ahora necesitamos asociar nuestra página de HTML con nuestro script de jQuery, de modo que nuestra magia de jQuery afecte nuestro HTML.<br> Al igual que necesitamos una etiqueta &lt;link&gt; para conectar nuestros HTML y CSS, necesitamos una etiqueta &lt;script&gt; para conectar nuestro HTML y jQuery. La etiqueta se ve así:<br> &lt;script type="text/javascript" src="src"&gt;&lt;/script&gt;<br> Observa que la etiqueta &lt;script&gt; no se autocierra; necesita de una etiqueta &lt;/script&gt; de cierre.</p>
+
+        <h1> Primeros pasos </h1>
+        <p> La sintaxis $(document).ready(); que ya has visto. Funciona de esta manera: </p>
+        <ul>
+            <li> $() dice: "¡Oigan, están a punto de pasar cosas que tienen que ver con jQuery!" </li>
+            <li> La parte de document en medio de los paréntesis nos indica que estamos a punto de trabajar en el mismo documento de HTML. </li>
+            <li> .ready(); es una función, o una acción básica, en jQuery. Dice: "¡Voy a hacer algo tan pronto como el documento de HTML esté listo!" </li>
+            <li> La parte en medio de los paréntesis de .ready() es el evento de jQuery, que ocurre tan pronto como el documento de HTML está listo. </li>
+        </ul>
+        <p> De este modo,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<strong>$(document).ready(algo);</strong><br>
+            Dice: "¡cuando el documento de HTML esté listo, haz algo!"<br> Observa que .ready(); termina con un punto y coma. Esto le indica a jQuery que terminaste de darle un comando. </p>
+
+        <h1> El enfoque funcional </h1>
+        <p> Ahora necesitamos agregar algo adentro de nuestra función ready().<br> Recuerda: cuando hablamos de "función", piensa en "acción." Las <strong>funciones</strong> son la unidad básica con que se trabaja en jQuery.Es por eso que jQuery incluye la palabra clave function. La sintaxis se ve así:<br>function(){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acciones de jQuery;<br>}<br><br>Si agregamos nuestra función dentro de nuestro .ready(), jQuery ejecutará el código de nuestra función tan pronto como se cargue el documento de HTML. La sintaxis se vería de esta manera:<br>$(document).ready(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;acciones de jQuery;<br>});<br><br>Recuerda que cerramos nuestras sentencias de jQuery con un punto y coma.</p>
+
+        <h1> Deslizamiento electr(on)ico </h1>
+        <p> Ahora solamente tenemos que incluir una acción en el cuerpo de nuestra función. En este caso, haremos un encabezado divdeslizable y que se haga visible para nuestra página HTML.<br><br> En medio de los {} de nuestra function(), vamos a convertir nuestro div en un objeto de jQuery, de modo que jQuery pueda manipularlo. De forma muy parecida a como usamos .ready() en $(document), usaremos la acción .slideDown() en nuestro objeto div de jQuery.<br><br> Adentro de los paréntesis de .slideDown, vamos a indicarle qué tan rápido debe deslizarse. Vamos a escribir 'slow'. </p>
+
+        <h1> Adentro... </h1>
+        <p> Ahora vamos a incluir nuestra palabra clave function junto con dos nuevas acciones, <strong>mouseenter() y fadeTo()</strong>.<br> <strong>mouseenter()</strong> produce un cambio cuando mueves el puntero dentro de un elemento de HTML determinado. Por ejemplo:<br><br>$(document).ready(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;$('div').mouseenter(function() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('div').hide();<br>&nbsp;&nbsp;&nbsp;&nbsp;});<br>});<br><br>Debería hacer que todos los &lt;div&gt; de la página se oculten en cuanto muevas el puntero sobre uno de ellos. (En la próxima lección veremos cómo afectar a solamente un &lt;div&gt; entre muchos.) Por ahora solamente tenemos un &lt;div&gt;, así que este código está bien.<br>Sin embargo, vamos a ubicar a <strong>fadeTo()</strong> al interior de mouseenter(), en lugar de hide(). fadeTo() toma dos argumentos, o entradas, en medio de sus paréntesis, separados por una coma: la velocidad a la cual se desvanece el elemento, y la opacidad (o transparencia) que tendrá al desvanecerse. Por ejemplo:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;fadeTo('fast', 0.25);<br><br>Hará que el elemento se  desvanezca rápidamente hasta un 25% de su opacidad original, volviéndolo muy claro.</p>
+
+        <h1> Funciones, Parte II: funciones explicadas </h1>
+        <p> Una función está compuesta de tres partes: la palabra clave function, los argumentos que la función tome (que van en medio de () y se separan por comas, si se trata de más de uno), y cualquier acción que la función deba ejecutar (que van en medio de {}). La forma general es:<br><br>
+        function(argumento1, argumento2, etc.) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Realiza una acción<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Realiza otra acción<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;¡Realiza otra acción más!<br>
+        }<br><br>
+        Una de las cosas buenas de jQuery es que el argumento de una función puede ser casi cualquier cosa, ¡incluso puede ser otra función! Es por eso que .ready() puede incluir a function en medio de sus paréntesis; está tomando como argumento a una función.</p>
+
+        <h1> Asignar valores </h1>
+        <p> El signo = es usado para asignar valores. Por ejemplo, en jQuery puedes escribir<br>
+            var $p = $('p');<br>
+            Con lo cual se almacena el objeto de jQuery $('p') en la variable $p . Una variable es solamente un nombre útil que usamos para almacenar valores de jQuery.<br>
+            ¿Cuál es la razón para hacerlo? Pues bien, a veces nuestro código de jQuery se hace muy largo, y puede llegar a ser buena idea almacenarlo en pequeñas variables para usarlo después. Por ejemplo, si queremos modificar un elemento de HTML que está anidado, podríamos hacer esto:<br><br>
+            $(document).ready(function() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;var $item = $('div ul li ol li');<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$item.fadeOut('fast');<br>
+            });</p>
+
+        <h1> ¡'this' es importante! </h1>
+        <p> En la última lección, teníamos un código que se veía así:<br><br>
+            $(document).ready(function() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$('div').mouseenter(function() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('div').hide();<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+            });<br><br>
+
+La segunda línea está bien: nos dice que cuando pasamos el puntero sobre un div, una acción determinada debería ejecutarse. Sin embargo, $('div').hide(); no solamente ocultará el div sobre el que pasas el puntero; también ocultará todos los div de la página. ¿Cómo podemos indicarle a jQuery que solamente queremos afectar este div en particular?<br>
+¡Pues para ello usamos <strong>this</strong>!<br>
+La palabra clave <strong>this</strong> se refiere al objeto de jQuery con el que estamos trabajando en ese momento. Las reglas de operación son un poco complejas, pero lo importante es entender que si usas un controlador de eventos (ese es el nombre elegante de las acciones como .click() y .mouseenter(), ya que controlan eventos de jQuery) en un elemento, puedes llamar al evento que ocurre (tal como fadeOut()) con $(this), y el evento solamente afectará al elemento con el que haces algo en ese momento (por ejemplo, sobre el que se hace clic o se pasa el puntero).
+ </p>
+
+        
+
+        <a href = "index.html">  <img  src = "btnHome.ico" alt = "Inicio" width = "50" height= "50"> </a>
+        <a target="_blank" href= "http://validator.w3.org/check?uri=https://carlosuaslp.github.io/semana6.html"> <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML"> </a>
+        <a target="_blank" href="https://jigsaw.w3.org/css-validator/validator?uri=https://carlosuaslp.github.io/semana6.html"> <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"> </a>
+
+        <script src="main.js" type="text/javascript">  </script>
+    </body>
+</html>

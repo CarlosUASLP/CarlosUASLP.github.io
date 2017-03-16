@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title> CSS Cascading Style Sheets </title>
-    <link href = "estiloSema1.css" type = "text/css" rel = "stylesheet">
+    <link href = "estilo1.css" type = "text/css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
-<body>
+<body class = "body1">
     <h1> CSS Cascading Style Sheets </h1>
-    <p> Son estilos que ya estan hechos por desarrolladores o por empresas ya establecidas. </p>
+    <p> Son estilos que ya están hechos por desarrolladores o por empresas ya establecidas. </p>
     <h2> Hojas de estilo en cascada </h2>
     <ul>
-        <li> Combinacion de colores </li>
+        <li> Combinación de colores </li>
         <li> Diseñadores del estilo </li>
         <li> Programadores del contenido </li>
     </ul>
@@ -18,7 +20,7 @@
         <caption> Historia de CSS</caption>
         <thead>
             <tr>
-                <th> Version </th>
+                <th> Versión </th>
                 <th> Borrador </th>
                 <th> Liberado </th>
                 <th> Soportado </th>
@@ -46,7 +48,7 @@
         </tbody>
     </table>
     <h2> ¿Que son las reglas? </h2>
-    <p> Las reglas sirven para cambiar los elementos de HTML. Las reglas permiten cambiar la apariencia (presentacion) de los elementos HTML. </p>
+    <p> Las reglas sirven para cambiar los elementos de HTML. Las reglas permiten cambiar la apariencia (presentación) de los elementos HTML. </p>
     <h2> Sintaxis general de CSS </h2>
         <p> selector { declaraciones } </p>
     <h2> Declaraciones CSS </h2>
@@ -55,7 +57,7 @@
         <ul>
             <li> colores </li>
             <li> fuentes </li>
-            <li> margenes </li>
+            <li> márgenes </li>
             <li> etc </li>
         </ul>
     <h2> Ejemplos </h2>
@@ -66,30 +68,30 @@
         <li> Del usuario (archivo local) </li>
         <li> Hoja de estilo externa <br> Utiliza la etiqueta &lt;link&gt; para hacer referencia al archivo <br> Ejemplo: <br> &lt;head&gt;<br> &lt; link href = "estilos.css" type = "text/css" rel = "stylesheet" &gt; <br>&lt;/head&gt;</li>
         <li> Estilo interno  <br> Esta adentro del mismo archivo HTML y CSS. Utiliza la etiqueta &lt;style&gt; No es muy recomendable. <br> Ejemplo: <br> &lt;head&gt;<br> &lt;style&gt; <br> h1 { color : blue; } <br> &lt;/style&gt;<br>&lt;/head&gt;</li>
-        <li> Estilo en linea <br> Se asigna la propiedad y valor como atributo del elemento.<br> Ejemplo: <br> &lt; h1 style = " color : blue; "&gt; Titulo &lt;/h1&gt; </li>
+        <li> Estilo en línea <br> Se asigna la propiedad y valor como atributo del elemento.<br> Ejemplo: <br> &lt; h1 style = " color : blue; "&gt; Titulo &lt;/h1&gt; </li>
     </ol>
     <h1> Selectores CSS </h1>
     <dl>
         <dt> 1) Selector de tipo </dt>
         <dd> Selecciona un tipo de elemento HTML y aplica el estilo a todos los elementos del mismo tipo.<br>Ejemplo: <br> p { text-align : justify; } </dd>
         <dt> 2) Selector descendente </dt>
-        <dd> Aplica el estilo a los elementos que estan contenidos dentro de otros elementos.<br>Ejemplo: <br>p b { color : red; } </dd>
+        <dd> Aplica el estilo a los elementos que están contenidos dentro de otros elementos.<br>Ejemplo: <br>p b { color : red; } </dd>
         <dt> 3) Selector hijo </dt>
-        <dd> Similar al descendente pero mas restrictivo. Aplica el estilo solamente a los elementos que sean hijos directos de otro elemento.<br>Ejemplo: <br> p > b { color : blue; } </dd>
+        <dd> Similar al descendente pero más restrictivo. Aplica el estilo solamente a los elementos que sean hijos directos de otro elemento.<br>Ejemplo: <br> p > b { color : blue; } </dd>
         <dt> 4) Selector por ID </dt>
-        <dd> Un ID es un atributo de un elemento HTML y se utiliza para aplicar un estilo de manera particular. <br>Ejemplo: <br> &lt;p id = "introduccion"&gt; Este es el parrafo de la introduccion &lt;/p&gt;<br>#intriduccion{ color : blue; } </dd>
+        <dd> Un ID es un atributo de un elemento HTML y se utiliza para aplicar un estilo de manera particular. <br>Ejemplo: <br> &lt;p id = "introducción"&gt; Este es el párrafo de la introducción &lt;/p&gt;<br>#introducción{ color : blue; } </dd>
         <dt> 5) Selector por clase </dt>
-        <dd> Aplica estilo a un conjunto de elementos. <br>Ejemplo: <br>&lt;p class = "especial"&gt; Este es un parrafo especial &lt;/p&gt;<br>.especial { color : red; }</dd>
+        <dd> Aplica estilo a un conjunto de elementos. <br>Ejemplo: <br>&lt;p class = "especial"&gt; Este es un párrafo especial &lt;/p&gt;<br>.especial { color : red; }</dd>
         <dt> 6) Selector universal </dt>
-        <dd> Aplica el mismo estilo a "todos" los elementos de la pagina. </dd>
+        <dd> Aplica el mismo estilo a "todos" los elementos de la página. </dd>
     </dl>
-    <p> Los estilos se heredan, si aplicas un estilo a un elemento, todos los elementos dentro de el tendran el mismo estilo, pero se puede modificar por medio de declaraciones adicianales en cascada. </p>
+    <p> Los estilos se heredan, si aplicas un estilo a un elemento, todos los elementos dentro de el tendrán el mismo estilo, pero se puede modificar por medio de declaraciones adicionales en cascada. </p>
 
     <h1>  Agrupaciones de elementos </h1>
     <h2> &lt;div&gt; <br> &lt;span&gt; </h2>
-    <p> Ejemplo de &lt;span&gt;<br>&lt;p&gt; Esto es el &lt;span&gt; = "nombre"&gt; Area de computacion e informatica &lt;/span&gt; de la UASLP &lt;/p&gt;<br> &lt;div&gt; Agrupa elementos en el bloque<br> &lt;span&gt; Agrupa elementos en linea </p>
+    <p> Ejemplo de &lt;span&gt;<br>&lt;p&gt; Esto es el &lt;span&gt; = "nombre"&gt; Área de computación e informática &lt;/span&gt; de la UASLP &lt;/p&gt;<br> &lt;div&gt; Agrupa elementos en el bloque<br> &lt;span&gt; Agrupa elementos en linea </p>
     <h3> Color : nombre; </h3>
-    <p> Existen 140 nombres de colores. <br>Con hexadecimal #A3B8F3 con 6 o 3 digitos.<br>(rgb) y (rgba) rgb(x,y,z);<br>(hsl) y (hsla) grises y blancos.</p>
+    <p> Existen 140 nombres de colores. <br>Con hexadecimal #A3B8F3 con 6 o 3 dígitos.<br>(rgb) y (rgba) rgb(x,y,z);<br>(hsl) y (hsla) grises y blancos.</p>
     <h3> Fuentes </h3>
     <table>
         <caption>  Familias de fuentes </caption>
@@ -128,11 +130,11 @@
     <h3> Texto </h3>
     <dl>
         <dt> Efectos <br>text-decoration </dt>
-        <dd> subrayado (underline), sobre rayado (overline), tachado (line-through), parpadeo (blink) </dd>
-        <dt> Alineacion <br>text-align </dt>
-        <dd> izquierdo (left), derecho (right), centrado (center)</dd>
-        <dt> Transformacion <br> text-transform </dt>
-        <dd> mayusculas (uppercase), minusculas (lowercase), titulo (capitalize)</dd>
+        <dd> Subrayado (underline), sobre rayado (overline), tachado (line-through), parpadeo (blink) </dd>
+        <dt> Alineación <br>text-align </dt>
+        <dd> Izquierdo (left), derecho (right), centrado (center)</dd>
+        <dt> Transformación <br> text-transform </dt>
+        <dd> Mayúsculas (uppercase), minúsculas (lowercase), titulo (capitalize)</dd>
     </dl>
     <a href = "index.html">  <img  src = "btnHome.ico" alt = "Inicio" width = "50" height= "50"> </a>
     <a target="_blank" href= "http://validator.w3.org/check?uri=https://carlosuaslp.github.io/semana1.html"> <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML"> </a>
